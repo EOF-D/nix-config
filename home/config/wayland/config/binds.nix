@@ -31,6 +31,8 @@
         # Utilities.
         "$mod, Return, exec, $terminal"
         ", Print, exec, grimblast copy area"
+
+        "$alt, Space, exec, rofi -show drun"
       ]
       ++ (
         # Workspaces

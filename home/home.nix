@@ -28,6 +28,7 @@
 
     sessionVariables = {
       EDITOR = "nvim";
+      NIXOS_OZONE_WL = "1";
     };
   };
 
@@ -36,6 +37,24 @@
     grim
     grimblast
     hyprpaper
+    wl-clipboard
+
+    # Coding ultilies/apps
+    lunarvim
+
+    cmake
+    libgcc
+    gcc
+
+    llvmPackages.libcxxStdenv
+    clang-tools
+
+    haskell.compiler.native-bignum.ghc948
+    haskellPackages.stack
+    haskellPackages.cabal-install
+    haskell-language-server
+
+    unzip
 
     # Secrets
     sops
@@ -45,6 +64,7 @@
 
     # Sound
     pamixer
+    bluez
   ];
 
   programs = {
