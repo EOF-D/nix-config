@@ -24,6 +24,8 @@
     };
   };
 
+  services.gnome.gnome-keyring.enable = true;
+
   nixpkgs = {
     overlays = [];
     config = {
