@@ -18,13 +18,13 @@
     zplug = {
       enable = true;
       plugins = [
-	{ name = "mafredri/zsh-async"; tags = [from:github]; }
-	{ name = "sindresorhus/pure"; tags = [use:pure.zsh from:github as:theme]; }
+        { name = "mafredri/zsh-async"; tags = [from:github]; }
+        { name = "sindresorhus/pure"; tags = [use:pure.zsh from:github as:theme]; }
       ];
     };
 
     initExtra = ''
-       unset PROMPT_COMMAND
+      eval "$(direnv hook zsh)"
     '';
   };
 }

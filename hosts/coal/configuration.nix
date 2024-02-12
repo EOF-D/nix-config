@@ -52,6 +52,13 @@
     config.nix.registry;
 
   programs.dconf.enable = true;
+  
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+
+  services.blueman.enable = true;
 
   networking.hostName = "coal";
   boot.loader.systemd-boot.enable = true;

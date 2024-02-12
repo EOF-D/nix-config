@@ -41,20 +41,9 @@
 
     # Coding ultilies/apps
     lunarvim
-
-    cmake
-    libgcc
-    gcc
-
-    llvmPackages.libcxxStdenv
-    clang-tools
-
-    haskell.compiler.native-bignum.ghc948
-    haskellPackages.stack
-    haskellPackages.cabal-install
-    haskell-language-server
-
     unzip
+    direnv
+    gitkraken
 
     # Secrets
     sops
