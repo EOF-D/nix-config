@@ -25,6 +25,7 @@
 
     initExtra = ''
       eval "$(direnv hook zsh)"
+      LD_LIBRARY_PATH=/home/andy/.cache/pypoetry/virtualenvs/migration-ri3pQLP_-py3.11
     '';
   };
 }

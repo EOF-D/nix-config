@@ -15,13 +15,27 @@
 
       environmentFile = config.sops.secrets."wireless.env".path;
       networks = {
-        "@ssid@" = {
+        "@work@" = {
           auth = ''
             key_mgmt=WPA-EAP
             eap=PEAP
             phase2="auth=MSCHAPV2"
             identity="@identity@"
             password="@password@"
+          '';
+        };
+
+        "@home@" = {
+          auth = ''
+            ssid="@home@"
+            psk="@psk@"
+          '';
+        };
+
+        "@studio@" = {
+          auth = ''
+            ssid="@studio@"
+            psk="@studio_psk@"
           '';
         };
       };

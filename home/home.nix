@@ -45,15 +45,23 @@
     direnv
     gitkraken
 
+    notepadqq
+    csview
+
     # Secrets
     sops
 
-    # Browser
+    # Browser/Apps
     brave
+    discord
+    spotify
 
     # Sound
     pamixer
     bluez
+
+    # Utils
+    appimage-run
   ];
 
   programs = {
@@ -69,6 +77,7 @@
 
     bat.enable = true;
     eza.enable = true;
+    htop.enable = true;
   };
 
   # Nicely reload system units when changing configs

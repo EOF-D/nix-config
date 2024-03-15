@@ -31,7 +31,8 @@
         # Utilities.
         "$mod, Return, exec, $terminal"
         ", Print, exec, grimblast copy area"
-
+        "$mod, P, exec, appimage-run ~/vendors/Bearly-3.0.0.AppImage"
+        "$mod, H, exec, appimage-run ~/vendors/HTTPie-2024.1.2.AppImage"
         "$alt, Space, exec, rofi -show drun"
       ]
       ++ (
