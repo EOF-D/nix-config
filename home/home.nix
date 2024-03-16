@@ -66,6 +66,7 @@
 
     # Utils
     appimage-run
+    ollama
 
     inputs.neve.packages.${system}.default
   ];
