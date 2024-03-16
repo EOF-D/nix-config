@@ -45,7 +45,6 @@
     wl-clipboard
 
     # Coding ultilies/apps
-    lunarvim
     unzip
     direnv
     gitkraken
@@ -67,6 +66,8 @@
 
     # Utils
     appimage-run
+
+    inputs.neve.packages.${system}.default
   ];
 
   programs = {
