@@ -15,7 +15,12 @@
   colorscheme = inputs.nix-colors.colorSchemes.gruvbox-material-dark-hard;
 
   nixpkgs = {
-    overlays = [];
+    overlays = [
+      (final: prev: {
+        neovim = inputs.neve.packages.${prev.system}.default;
+      })
+    ];
+
     config = {
       allowUnfree = true;
       allowUnfreePredicate = _: true;

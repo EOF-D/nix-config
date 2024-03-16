@@ -2,11 +2,11 @@
   description = "Andy's NixOS flake.";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     sops-nix.url = "github:Mic92/sops-nix";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-23.11";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -14,6 +14,8 @@
     hyprpaper.url = "github:hyprwm/hyprpaper";
 
     nix-colors.url = "github:misterio77/nix-colors";
+
+    neve.url = "github:EOF-D/neve";
   };
 
   outputs = {
@@ -21,6 +23,7 @@
     nixpkgs,
     home-manager,
     sops-nix,
+    neve,
     ...
   } @ inputs: let
     inherit (self) outputs;
